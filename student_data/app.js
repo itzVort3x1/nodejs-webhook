@@ -9,8 +9,8 @@ const app = express();
 const PORT = 3100;
 app.use(bodyParser.json());
 
-const dbUrl =
-	"mongodb+srv://admin:admin@cluster0.jnnf4ag.mongodb.net/student_data";
+// IMPORTANT: Add your database url below.
+const dbUrl = "";
 mongoose.connect(dbUrl);
 
 app.get("/", (req, res) => {
